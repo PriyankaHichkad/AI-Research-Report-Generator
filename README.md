@@ -8,7 +8,7 @@ AUTHOR: Priyanka Rajeev Hichkad
 ## Overview
 The **Automated Research Report Generator** is an AI-powered workflow that automatically gathers information on a given topic, summarizes key insights, and generates a structured research report. The system uses AI agents together with web search tools to collect relevant information and deliver the final report via email.
 
-The workflow is built using :contentReference[oaicite:0]{index=0} and demonstrates how AI agents can interact with external tools to automate multi-step tasks such as research, summarization, and communication.
+The workflow is built using n8n, a workflow automation platform that allows integration of AI models, APIs, and external tools to automate complex multi-step tasks.
 
 ---
 
@@ -34,7 +34,7 @@ By combining AI reasoning with workflow automation, this project simulates a dig
 
 # Workflow Architecture
 
-The system follows a multi-step workflow designed using :contentReference[oaicite:1]{index=1}.
+The system follows a multi-step workflow designed using n8n.
 
 ### 1. User Input
 The workflow begins with a user providing a **research topic** through the input message node.
@@ -47,7 +47,7 @@ Applications of Artificial Intelligence in Healthcare
 ### 2. Main AI Agent
 The **Main AI Agent** acts as the controller of the workflow. It interprets the user's request and decides when to call other tools or agents to gather information.
 
-The reasoning capabilities of the agent are powered by a chat model accessed through :contentReference[oaicite:2]{index=2}.
+The reasoning capabilities of the agent are powered by a chat model accessed through it.
 
 ---
 
@@ -57,7 +57,7 @@ AI-powered research assistant using a chat model to search the web, generate rep
 ---
 
 ### 4. Web Search Tool
-The research agent uses :contentReference[oaicite:3]{index=3} to perform automated web searches. The tool retrieves relevant articles and web resources related to the research topic.
+The ai agent uses web search tool (serp-api) to perform automated web searches. The tool retrieves relevant articles and web resources related to the research topic.
 
 ---
 
@@ -80,9 +80,9 @@ The generated research report is automatically sent to the user using the **Send
 
 # Technologies Used
 
-- :contentReference[oaicite:4]{index=4} – Workflow automation and orchestration  
-- :contentReference[oaicite:5]{index=5} – Access to AI chat models  
-- :contentReference[oaicite:6]{index=6} – Web search API for retrieving research content  
+- n8n – Workflow automation and orchestration  
+- Openrouter – Access to AI chat models  
+- SerpAPI – Web search API for retrieving research content  
 - Email integration – Automated report delivery  
 
 ---
@@ -125,7 +125,7 @@ The demonstration video includes:
 
 # Workflow File
 
-This repository also contains the exported workflow configuration file from :contentReference[oaicite:7]{index=7}.
+This repository also contains the exported workflow configuration file.
 
 📂 **Workflow JSON File**
 
