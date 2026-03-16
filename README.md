@@ -10,6 +10,8 @@ The **Automated Research Report Generator** is an AI-powered workflow that autom
 
 The workflow is built using n8n, a workflow automation platform that allows integration of AI models, APIs, and external tools to automate complex multi-step tasks.
 
+![n8n](https://github.com/PriyankaHichkad/AI-Research-Report-Generator/blob/main/n8n%20workflow.jpeg)
+
 ---
 
 # Introduction
